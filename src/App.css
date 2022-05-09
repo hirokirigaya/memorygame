@@ -1,0 +1,32 @@
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all .5s;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btnTheme {
+  background-color: var(--bg-btn);
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.btnTheme svg {
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+.btnTheme:hover {
+  background-color: var(--btn-hover);
+}
+

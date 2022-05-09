@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  min-height: 120vh;
+  margin: 0 auto;
+}
+.box {
+  width: 700px;
+  height: 500px;
+}
+
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: 15px;
+  filter: grayscale(100%);
+}
+
+.headerGame {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: .3rem;
+  z-index: 10;
+  align-items: center;
+}
+
+.headerGame .timer {
+  width: 120px;
+  font-size: 1.25rem;
+  color: rgb(143, 0, 0);
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play .start {
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--btn);
+  color: var(--text-primary);
+  z-index: 11;
+  filter: grayscale(0%);
+}
+
+.start .off {
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  border: none;
+  filter: grayscale(100%);
+  z-index: 11;
+  cursor: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.headerGame .restart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.1rem .3rem;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--btn);
+  color: var(--text-primary);
+  z-index: 11;
+}

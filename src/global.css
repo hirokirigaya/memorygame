@@ -1,0 +1,64 @@
+
+:root {
+  --background: #E5E3E6;
+  --bg-btn: #EDD0C2;
+  --btn-hover: #fde2d5;
+  --btn: #EDD0C2;
+  --text-footer: #ffae6c;
+  --footer: #bdaaa1;
+  --text-primary: #A98F78;
+  --text-secondary: rgb(65, 140, 225);
+  --accent: #DCBEB4;
+  --yellow: #dfc800;
+}
+
+[data-theme='dark'] {
+  --background: #3C405B;
+  --bg-btn: #717791;
+  --btn: #717791;
+  --footer: #717791;
+  --btn-hover: #818aa8;
+  --text-primary: #F0A798;
+  --text-footer: #F0A798;
+  --text-secondary: rgb(29, 29, 29);
+  --accent: #717791;
+}
+
+*,
+body {
+  font-family: 'League Spartan', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, input, button {
+  font-size: 1.6rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9d0c8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e08e7d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e08e7d
+}

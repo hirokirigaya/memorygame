@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.list li {
+  text-decoration: none;
+}
+
+.list li a {
+  color: var(--footer);
+  transition: 200ms ease-in-out;
+}
+
+.list li a:hover {
+  color: var(--text-primary);
+}
+
+footer .copy{
+  color: var(--footer);
+}
+
+
+footer .copy a {
+  text-decoration: none;
+  color: var(--text-footer);
+  transition: 200ms ease-in-out;
+} 
+footer .copy a:hover {
+  color: var(--footer);
+}
+
+footer .version {
+  color: var(--text-footer);
+}

@@ -1,0 +1,13 @@
+ .gridCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ 
+ .cards {
+  margin: .2rem;
+  width: 160px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
