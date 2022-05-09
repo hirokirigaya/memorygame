@@ -11,9 +11,13 @@ Click [here](https://memorygame-one.vercel.app/) to look version alpha!
 
 ## How download repository?
 
-- You must have git installed on your machine, then run the commands below from the command line.
+- You must have git installed and node on your machine, then run the commands below from the command line.
 
 ```
 git clone https://github.com/hirokirigaya/memorygame
 
 cd memorygame
+
+npm install
+
+npm start
