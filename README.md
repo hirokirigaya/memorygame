@@ -7,13 +7,13 @@ ___
 ![img-page](https://i.imgur.com/7Voq1aG.png)
 > Game have two themes, dark and light.
 ___
-Click [here](https://memorygamedemo.vercel.app/) to look version alpha! 
+Click [here](https://memorygame-one.vercel.app/) to look version alpha! 
 
 ## How download repositorie?
 
 - You must have git installed on your machine, then run the commands below from the command line.
 
-```js
-git clone https://github.com/hirokirigaya/memory-game
+```
+git clone https://github.com/hirokirigaya/memorygame
 
-cd memory-game
+cd memorygame
