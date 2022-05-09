@@ -9,7 +9,7 @@ ___
 ___
 Click [here](https://memorygame-one.vercel.app/) to look version alpha! 
 
-## How download repositorie?
+## How download repository?
 
 - You must have git installed on your machine, then run the commands below from the command line.
 
