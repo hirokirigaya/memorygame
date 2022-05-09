@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './styles.css'
 import Cards from '../Cards'
 
@@ -8,6 +8,7 @@ function index() {
   
   const [time, setTime] = useState({s:0, m:0})
   const [interv, setInterv] = useState()
+  const [status, setStatus] = useState(0)
 
   const table = useRef()
   const timer = useRef()
@@ -15,7 +16,9 @@ function index() {
   const start = () => {
     table.current.style.filter = 'grayscale(0)'
     timer.current.style.color = 'rgb(255, 208, 0)'
+    console.log(status)
     run()
+    setStatus(1)
     setInterv(setInterval(run, 1000))
   }
 
@@ -33,13 +36,17 @@ function index() {
     UpdateS++;
     return setTime({m:UpdateM, s:UpdateS})
   }
-  
-  const restart = () => {document.location.reload()}
 
-  const stop = () => {
-    clearInterval(interv)
-    timer.current.style.color = 'rgb(36, 182, 0)'
-  }
+  let [gotItRight, setGotItRight] = useState([])
+  const restart = () => {document.location.reload()}
+  
+  useEffect(()=>{
+      if(gotItRight.length === 6) {
+        console.log(gotItRight)
+        clearInterval(interv)
+        timer.current.style.color = 'rgb(36, 182, 0)'
+    }
+  },[gotItRight])
   
   return (
     <section className='container'>
@@ -53,10 +60,10 @@ function index() {
         <button className='restart' onClick={restart}><Restart /></button>
       </div>
       <div className='table' ref={table}>
-        <Cards/>
+        <Cards status={status} gotItRight={gotItRight} setGotItRight={setGotItRight}/>
       </div>
       <div className='play'>
-        <button className='start' onClick={start}>Start</button>
+        <button className={status === 0 ? 'start' : 'startoff'} onClick={start}>Start</button>
       </div>
     </div>
   </section>

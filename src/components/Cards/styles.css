@@ -4,10 +4,55 @@
  }
  
  .cards {
+  user-select: none;
   margin: .2rem;
   width: 160px;
   height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  transition: 200ms ease-in-out;
+}
+
+.cardsOff {
+  user-select: none;
+  pointer-events: none;
+  margin: .2rem;
+  width: 160px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+@media(max-width: 750px) {
+  .gridCards {
+  grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+
+@media(max-width: 550px) {
+  .gridCards {
+  padding: 1rem 0;
+  }
+  .cards {
+    width: 100px;
+    height: 90px;
+  }
+  .cardsOff {
+    width: 100px;
+    height: 90px;
+  }
+}
+
+@media(max-width: 360px) {
+  .cards {
+    width: 90px;
+    height: 80px;
+  }
+  .cardsOff {
+    width: 90px;
+    height: 80px;
+  }
 }

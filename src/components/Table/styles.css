@@ -54,7 +54,9 @@
   filter: grayscale(0%);
 }
 
-.start .off {
+.startoff {
+  background-color: var(--btn);
+  color: var(--text-primary);
   margin-top: 1rem;
   cursor: pointer;
   padding: 0.3rem 1rem;
@@ -78,3 +80,18 @@
   color: var(--text-primary);
   z-index: 11;
 }
+
+@media(max-width: 750px) {
+  .box {
+    width: 100%;
+    height: 100%;
+  }
+  .headerGame .title {
+    font-size: 26px;
+  }
+}
+
+@media(max-width: 550px) {
+  .headerGame .title {
+    font-size: 20px;
+  }}

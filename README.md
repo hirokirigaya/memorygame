@@ -1,8 +1,19 @@
 ## Memory Game
 
-This version is Alpha, im go make new commits and modification in code.
-
-![img-page](https://i.imgur.com/uAAQZmr.png)
+Alpha version 0.2, interface and script finished. I really enjoyed working with the project, I learned new functions and improved my programming logic, in addition to overcoming challenges I had when building the site.
+___
+Versão Alpha 0.2, interface e script finalizados. Gostei muito de trabalhar com projeto, aprendi novas funções e melhorei minha lógica de programação, além de superar desafios que tive ao construir o site! 
+___
+![img-page](https://i.imgur.com/7Voq1aG.png)
 > Game have two themes, dark and light.
 ___
 Click [here](https://memorygamedemo.vercel.app/) to look version alpha! 
+
+## How download repositorie?
+
+- You must have git installed on your machine, then run the commands below from the command line.
+
+```js
+git clone https://github.com/hirokirigaya/memory-game
+
+cd memory-game
